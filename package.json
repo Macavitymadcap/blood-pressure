@@ -1,0 +1,21 @@
+{
+	"name": "blood-pressure",
+	"module": "index.ts",
+	"devDependencies": {
+		"@biomejs/biome": "2.5.15",
+		"@types/bun": "latest"
+	},
+	"peerDependencies": {
+		"typescript": "^7"
+	},
+	"private": true,
+	"scripts": {
+		"all": "bun run index.ts",
+		"add": "bun run src/db.ts",
+		"classify": "bun run src/classify.ts",
+		"averages": "bun run src/averages.ts",
+		"check": "biome check",
+		"check:fix": "biome check --write"
+	},
+	"type": "module"
+}
